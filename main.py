@@ -1,5 +1,5 @@
 import discord
-TOKEN = 'token'
+TOKEN = open("token.txt").readlines().strip()[0]
 client = discord.Client()
 @client.event
 async def on_message(message):
